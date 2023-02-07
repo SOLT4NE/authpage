@@ -7,7 +7,7 @@ export default function LoginBtn() {
     const provider = window.phantom?.solana;
     const resp = await provider.connect();
     const address = resp.publicKey.toString();
-    const chain = "devnet";
+    const chain = "mainnet-beta";
     const account = {
       address: address,
       chain: chain,
